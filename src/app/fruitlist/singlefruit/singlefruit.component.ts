@@ -18,10 +18,10 @@ export class SingleFruitComponent {
       reviews:[{name: "Kevin W.", text: "ist lecker"},{name: "Arne P.", text: "nicht so meins"}],
     };
 
-    // @Output()fruitname = new EventEmitter<string>();
+    @Output()fruitname = new EventEmitter<string>();
 
-    // emitName(){
-    //     this.fruitname.emit(this.fruit.name);
-    // }
+    emitName(){
+        this.fruitname.emit(this.fruit.name);
+    }
 
 }
